@@ -4,6 +4,8 @@ namespace ApiFilme.Models;
 
 public class Filme
 {
+
+    public int Id { get; set; }
     [Required(ErrorMessage = "O Título do filme precisa ser preenchido.")]
     public string Titulo { get; set; }
     [Required(ErrorMessage = "O Gênero do filme precisa ser preenchido.")]
@@ -13,10 +15,11 @@ public class Filme
     [Range(70, 600, ErrorMessage = "A duração precisa ser entre 70 e 600 minutos.")]
     public int TempoDuracao { get; set; }
 
-    public Filme(string titulo, string genero, int tempoDuracao)
+    public Filme(string titulo, string genero, int tempoDuracao, int id)
     {
         Titulo = titulo;
         Genero = genero;
         TempoDuracao = tempoDuracao;
+        Id = id;
     }
 }
