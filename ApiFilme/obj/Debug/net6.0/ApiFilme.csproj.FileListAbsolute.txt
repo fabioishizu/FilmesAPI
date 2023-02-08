@@ -30,3 +30,6 @@ C:\Users\fmasa\source\repos\ApiFilme\ApiFilme\obj\Debug\net6.0\refint\ApiFilme.d
 C:\Users\fmasa\source\repos\ApiFilme\ApiFilme\obj\Debug\net6.0\ApiFilme.pdb
 C:\Users\fmasa\source\repos\ApiFilme\ApiFilme\obj\Debug\net6.0\ApiFilme.genruntimeconfig.cache
 C:\Users\fmasa\source\repos\ApiFilme\ApiFilme\obj\Debug\net6.0\ref\ApiFilme.dll
+C:\Users\fabio.masao\Desktop\FilmesAPI\ApiFilme\obj\Debug\net6.0\ApiFilme.dll
+C:\Users\fabio.masao\Desktop\FilmesAPI\ApiFilme\obj\Debug\net6.0\refint\ApiFilme.dll
+C:\Users\fabio.masao\Desktop\FilmesAPI\ApiFilme\obj\Debug\net6.0\ApiFilme.pdb
