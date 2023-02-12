@@ -31,16 +31,19 @@ public class FilmeController : ControllerBase
     }
 
     [HttpGet]
-    public IEnumerable<Filme> RecuperarFilmes([FromQuery] int skip = 0, [FromQuery] int take = 50)
+    public IEnumerable<ReadFilmeDto> RecuperarFilmes([FromQuery] int skip = 0, [FromQuery] int take = 50)
     {
-        return _context.Filmes.Skip(skip).Take(take);
+        return _mapper.Map<List<ReadFilmeDto>>(_context.Filmes.Skip(skip).Take(take));
     }
 
     [HttpGet("{id}")]
     public IActionResult RecuperaFilmePorId(int id)
     {
         var filme = _context.Filmes.FirstOrDefault(filme => filme.Id == id);
-        return (filme == null) ? NotFound() : Ok(filme);
+        if (filme == null) return NotFound();
+
+        var filmeDto = _mapper.Map<ReadFilmeDto>(filme);
+        return Ok(filmeDto);
     }
 
     [HttpPut("{id}")]
