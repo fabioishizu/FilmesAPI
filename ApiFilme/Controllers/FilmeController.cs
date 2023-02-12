@@ -15,7 +15,7 @@ public class FilmeController : ControllerBase
     {
         filme.Id = id++;
         filmes.Add(filme);
-        return CreatedAtAction(nameof(RecuperaFilmePorId), new {id = filme.Id}, filme));
+        return CreatedAtAction(nameof(RecuperaFilmePorId), new {id = filme.Id}, filme);
     }
 
     [HttpGet]

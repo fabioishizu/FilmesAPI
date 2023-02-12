@@ -5,6 +5,8 @@ namespace ApiFilme.Models;
 public class Filme
 {
 
+    [Key]
+    [Required]
     public int Id { get; set; }
     [Required(ErrorMessage = "O Título do filme precisa ser preenchido.")]
     public string Titulo { get; set; }
